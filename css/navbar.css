@@ -1,0 +1,132 @@
+/* navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #346F68; 
+    color: #c0fdfb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+body {
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 90px;
+    min-height: 100vh; 
+    position: relative; 
+}
+
+nav .logo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+    padding-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #c0fdfb;
+    transition: color 0.3s ease;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ED6E90; 
+}
+
+nav ul li form.search {
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 0;
+    background-color: #346F68;
+    box-shadow: none;
+    
+}
+
+nav ul li form.search input[type="text"] {
+    width: calc(100% - 89px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav ul li form.search button {
+    background: #ED6E90;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    margin-bottom: 0;
+}
+
+nav ul li form.search button:hover {
+    background: #D5C5C8;
+}
+
+/* Footer */
+
+footer {
+    background-color: #346F68; 
+    color: #c0fdfb; 
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+footer p {
+    font-size: 1rem;
+    margin: 20px;
+}
+
+/* scroll buttons */
+.scroll-buttons {
+    position: fixed;
+    right: 30px;
+    bottom: 5px;
+    display: flex; 
+    flex-direction: column; 
+    z-index: 100;
+    text-align: center;
+  }
+  .scroll-buttons a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    margin-bottom: 30px;
+  }
+
+  .arrow {
+    border: solid #ED6E90;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 15px;
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
