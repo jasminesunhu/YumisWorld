@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/blogstyle.css">
+    <title>Contact Me</title>
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+    <!-- Contact Form -->
+    <div class="container">
+        <h2>Contact Information</h2>
+        <p>If you have any questions or would like to get in touch, you can contact me using the information below:</p>
+        
+        <p><strong>Email:</strong> yumisworldxo@gmail.com </p>
+        <p><strong>Instagram:</strong> yumisworld </p>
+        
+        <h2>Contact Form</h2>
+        <p>You can also reach out to me by filling out the form below. For custom requests be sure to include the following information: <br>
+            <br>
+            Item type (e.g. earrings, keychain, plushie)<br>
+            Sizing (can approximate if unsure) <br>
+            Budget <br>
+            Specifications (e.g. type of yarn used) <br>
+            Please note that orders may take up to 5-7 business days to ship. Depending on the size of the project, it may take even longer. <br>
+        </p>
+        <form id="contactForm">
+            <label for="name">Name<element style="color: red">*</element>:</label>
+            <input type="text" id="name" name="name" required><br>
+            <span id="error-name" class="error-message"></span><br>
+
+            <label for="mail">Email<element style="color: red">*</element>:</label>
+            <input type="email" id="mail" name="mail" required><br>
+            <span id="error-email" class="error-message"></span><br>
+
+            <label for="message">Message<element style="color: red">*</element>:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <span id="error-text" class="error-message"></span><br>
+
+            <input type="submit" value="Submit">
+            
+        </form>
+        
+    </div>
+
+    <script src="/javascript/jquery.js"></script>
+    <script src="/javascript/search.js"></script>
+    <script src="/javascript/validation.js"></script>
+    <script src="/javascript/jqueryscripts.js"></script>
+
+    <div id="footer"></div>
+</body>
+</html>

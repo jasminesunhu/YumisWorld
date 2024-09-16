@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/shopstyle.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <title>Yumi's World</title>
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <h1 id="search-results-heading">Search Results for "{{ searchTerm }}"</h1>
+
+    <!-- search results will be visible based on search input -->
+    <section id="searchResults">
+        <h2>Products</h2>
+        <p id="noResultsP" style="display: none;">No results found for your search.</p>
+        <ul id="productList">
+            <li class="products" ><a href="Products/CatEarrings.html">Cat Earrings</a><br><img src="../Images/CatEarrings.jpg" alt="Flower Coaster" width="300" height="400"></li>
+            <li class="products" ><a href="Products/CornPlushie.html">Corn Plushie</a><br><img src="../Images/CornPlushie.jpg" alt="Corn Plushie" width="300" height="400"></li>
+            <li class="products" ><a href="Products/StarPillow.html">Star Pillow</a><br><img src="../Images/StarPillow.jpg" alt="Star Pillow" width="300" height="400"></li>
+        </ul>
+
+        <h2>Blog Posts</h2>
+        <p id="noResultsB" style="display: none;">No results found for your search.</p>
+        <ul id="blogPostList">
+            <li class="blogs" ><a href="Blogs/blog2.html">Crocheting Sustainably</a></li>
+            <li class="blogs" ><a href="Blogs/blog1.html">How do I Start Crocheting? A Beginner's Guide</a></li>
+        </ul>
+    </section>
+
+    <script src="/javascript/jquery.js"></script>
+    <script src="/javascript/search.js"></script>
+    <script src="/javascript/jqueryscripts.js"></script>
+    
+
+    <div id="footer"></div>
+
+</body>
+</html>

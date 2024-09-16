@@ -1,0 +1,27 @@
+#accordion {
+    list-style: none;
+    padding: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 7%;
+  }
+  
+  #accordion li {
+    margin-bottom: 10px;
+  }
+  
+  #accordion h3 {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #accordion div {
+    padding: 10px;
+    display: none;
+  }
+  
+  #accordion li.active div {
+    display: block;
+  }
+  
